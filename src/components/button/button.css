@@ -1,0 +1,28 @@
+.button {
+  border: none;
+  outline: none;
+  background-color: var(--neon);
+  padding: var(--space-sm) var(--space-lg);
+  width: fit-content;
+  height: fit-content;
+  font-weight: 400;
+  font-size: var(--font-xs);
+  color: var(--black);
+}
+
+.button:hover {
+  background-color: var(--neon-dark);
+}
+
+.button:disabled,
+.button:disabled:hover {
+  background-color: var(--neon-disabled);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+    font-size: var(--font-md);
+    min-height: var(--font-3xl);
+  }
+}

@@ -1,0 +1,19 @@
+.input {
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--font-3xs);
+  font-size: var(--font-xs);
+  border: none;
+  outline: none;
+}
+
+.input:focus {
+  outline: 2px solid var(--neon);
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 100%;
+    min-height: var(--font-3xl);
+    font-size: var(--font-md);
+  }
+}

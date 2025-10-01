@@ -1,0 +1,115 @@
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-70px, 20px);
+  }
+  50% {
+    transform: translate(-50px, 50px);
+  }
+  75% {
+    transform: translate(-10px, 30px);
+  }
+  100% {
+    transform: translate(50px, -50px);
+  }
+}
+
+a {
+  color: var(--white);
+}
+
+.get-in-touch-form-container {
+  padding: var(--space-xl) var(--space-3xl);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  min-height: var(--size-3xl);
+}
+
+#get-in-touch-form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.form-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-text-inputs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.form-captcha-and-submit-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.blob-wrapper {
+  animation: float 7s ease-in-out infinite alternate;
+}
+
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd322a7, transparent 100%);
+  filter: blur(50px);
+  transition: transform 1s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob.a {
+  top: -100px;
+  left: -10%;
+}
+
+.blob.b {
+  top: 100px;
+  left: 40%;
+}
+
+.get-in-touch-form-container:hover .blob {
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 768px) {
+  .get-in-touch-form-container {
+    padding: var(--space-xl) 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  #get-in-touch-form {
+    gap: var(--space-xl);
+  }
+
+  .form-inputs-container {
+    gap: var(--space-xl);
+  }
+
+  .form-text-inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+  }
+
+  .form-captcha-and-submit-container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+  }
+}

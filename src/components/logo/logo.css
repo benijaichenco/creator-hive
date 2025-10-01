@@ -1,0 +1,10 @@
+.logo {
+  height: auto;
+  width: var(--size-lg);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: var(--size-xl);
+  }
+}

@@ -168,8 +168,7 @@ const Form = () => {
           </div>
 
           <Text size="sm" fontWeight="light" color="var(--white)" align="center">
-            Or Email us at{" "}
-            <a href="mailto:contact@digitalparagon.net">contact@digitalparagon.net</a>
+            Or Email us at <a href="mailto:contact@creatorhive.com">contact@creatorhive.com</a>
           </Text>
         </form>
       )}

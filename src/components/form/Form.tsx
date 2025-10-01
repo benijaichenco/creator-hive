@@ -6,8 +6,8 @@ import Button from "../button/Button";
 
 import "./form.css";
 
-const SITE_KEY = "6LcEqNErAAAAAJTmR2eTMY6S2H1tSf0XIXQNx9z7";
-const WEB3FORM = "2fac189b-8590-4c4d-a784-83deaf66026c";
+const SITE_KEY = "6LczLNsrAAAAACxBlJUO5K0Rm1cMj_LX1GHl8sLn";
+const WEB3FORM = "";
 
 const Form = () => {
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);

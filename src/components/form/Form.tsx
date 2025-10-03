@@ -7,7 +7,7 @@ import Button from "../button/Button";
 import "./form.css";
 
 const SITE_KEY = "6LczLNsrAAAAACxBlJUO5K0Rm1cMj_LX1GHl8sLn";
-const WEB3FORM = "";
+const WEB3FORM = "3a2fbbfc-d7df-4c66-957c-615154619041";
 
 const Form = () => {
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);
@@ -154,10 +154,10 @@ const Form = () => {
 
           <div className="form-inputs-container">
             <div className="form-text-inputs-container">
-              <Input type="text" name="name" placeholder="Name" />
-              <Input type="email" name="email" placeholder="Enter email" />
-              <Input type="text" name="position" placeholder="Position" />
-              <Input type="text" name="company" placeholder="Company" />
+              <Input type="text" name="name" placeholder="Name" required />
+              <Input type="email" name="email" placeholder="Enter email" required />
+              <Input type="text" name="position" placeholder="Position" required />
+              <Input type="text" name="company" placeholder="Company" required />
             </div>
             <div className="form-captcha-and-submit-container">
               <ReCAPTCHA sitekey={SITE_KEY} onChange={setCaptchaValue} />
@@ -168,7 +168,7 @@ const Form = () => {
           </div>
 
           <Text size="sm" fontWeight="light" color="var(--white)" align="center">
-            Or Email us at <a href="mailto:contact@creatorhive.com">contact@creatorhive.com</a>
+            Or Email us at <a href="mailto:sergei@kostin.llc">sergei@kostin.llc</a>
           </Text>
         </form>
       )}
